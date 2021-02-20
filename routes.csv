@@ -1,0 +1,6 @@
+Type,Route,Function,Request,Response
+GET,/textbook/get,This route allows for the user to get access to his/her own set of collection of textbooks,"{""email"": string; ""password"": string}","{""error"": string} | {""textbook"": array<object>}"
+PATCH,/textbook/add,This route allows for the user to add textbook to his/her own set of collection of textbooks,"{""book_id"": number; ""email"": string; ""password"": string}","{""error"": string} | {""success"": boolean""}"
+DELETE,/textbook/remove,This route allows for the user to remove textbook from his/her own set of collection of textbooks,"{""book_id"": number; ""email"": string; ""password"": string}","{""error"": string} | {""success"": boolean""}"
+GET,/share/qrcode,This route allows for the user to get a QR Code that embeds a link to their collection of textbooks. The collection of textbooks linked to will only return the name of the textbooks,"{""email"": string; ""password"": string}","{""error"": string} | .png image with the QR Code"
+GET,/share/<id>,This route allows for everyone to access the speicified collection of books,None,"{""error"": string} | {""collection"": array<string>"

@@ -1,0 +1,39 @@
+GET http://127.0.0.1:5000/textbook/get
+Content-Type: application/json
+
+{
+    "email": "testStudent@gmail.com",
+    "password": "testStudent"
+}
+
+###
+
+PATCH http://127.0.0.1:5000/textbook/add
+Content-Type: application/json
+
+{
+    "book_id": 4,
+    "email": "testStudent@gmail.com",
+    "password": "testStudent"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/textbook/remove
+Content-Type: application/json
+
+{
+    "book_id": 3,
+    "email": "testStudent@gmail.com",
+    "password": "testStudent"
+}
+
+###
+
+GET http://127.0.0.1:5000/share/qrcode
+Content-Type: application/json
+
+{
+    "email": "testStudent@gmail.com",
+    "password": "testStudent"
+}
